@@ -1,0 +1,8 @@
+{
+    "name": "coalesce/coalesce",
+    "autoload": {
+        "files": [
+            "coalesce.php"
+        ]
+    }
+}
