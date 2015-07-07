@@ -22,4 +22,16 @@ if (!function_exists('coalescy')) {
     }
 }
 
+if (!function_exists('val')) {
+
+    /**
+     * @param array $arr
+     * @param string|int $index
+     * @return The array element or null if it's undefined
+     */
+    function val($arr, $index) {
+        return isset($arr[$index]) ? $arr[$index] : null;
+    }
+}
+
 ?>
