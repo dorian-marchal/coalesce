@@ -6,9 +6,10 @@ if (!function_exists('coalesce')) {
      * @return The first non null argument (or null)
      */
     function coalesce() {
-        return array_shift(array_filter(func_get_args(), function ($value) {
+        $notNullArgs = array_filter(func_get_args(), function ($value) {
             return !is_null($value);
-        }));
+        });
+        return array_shift($notNullArgs);
     }
 }
 
@@ -18,7 +19,8 @@ if (!function_exists('coalescy')) {
      * @return The first non "falsy" argument (or null)
      */
     function coalescy() {
-        return array_shift(array_filter(func_get_args()));
+        $notFalsyArgs = array_filter(func_get_args());
+        return array_shift($notFalsyArgs);
     }
 }
 
