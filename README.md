@@ -4,8 +4,9 @@ Two "coalescy" php functions to used while waiting for the `??` operator :
 - `coalesce` : simple null coalesce function for PHP
 - `coalescy` : like `coalesce`, but returns the first not falsy value.
 
-And a function to get a potentially undefined element without throwing `E_NOTICE`
+And two functions to get a potentially undefined element without throwing `E_NOTICE`
 - `val` : returns an array element or null if the index is undefined
+- `prop` : returns an object property or null if the index is undefined
 
 ### Installation
 

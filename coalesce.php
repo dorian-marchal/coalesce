@@ -36,4 +36,16 @@ if (!function_exists('val')) {
     }
 }
 
+if (!function_exists('prop')) {
+
+    /**
+     * @param Object $obj
+     * @param string $propertyName
+     * @return The object property or null if it's undefined
+     */
+    function prop($obj, $propertyName) {
+        return isset($obj->$propertyName) ? $obj->$propertyName : null;
+    }
+}
+
 ?>
